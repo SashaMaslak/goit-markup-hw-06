@@ -731,6 +731,11 @@ justify-content: center;
   cursor: pointer;
 }
 
+.close-btn:hover .contacts-close-black,
+.close-btn:focus .contacts-close-black {
+  fill: var(--accent-color)
+}
+
 .contacts-close-black {
   position: absolute;
   top: 8px;
@@ -739,10 +744,7 @@ justify-content: center;
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.close-btn:hover .contacts-close-black {
-  fill: var(--accent-color)
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-modal {
